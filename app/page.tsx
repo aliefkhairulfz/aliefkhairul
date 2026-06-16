@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
 
                 {/* Core Specification Text */}
-                <div className="absolute top-[18%] sm:top-1/4 md:top-1/3 left-0 ml-4 sm:ml-6 max-w-[250px] sm:max-w-xs flex flex-col gap-2 font-mono text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider z-20">
+                <div className="absolute top-[18%] sm:top-1/4 md:top-1/3 left-0 ml-4 sm:ml-6 max-w-62.5 sm:max-w-xs flex flex-col gap-2 font-mono text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider z-20">
                     <span className="text-neutral-900 font-bold">[CORE SPECIFICATION]</span>
                     <p className="leading-relaxed normal-case text-neutral-600">
                         Architecting digital environments by bridging the gap between interactive web development and immersive 3D execution. Structured to scale.
