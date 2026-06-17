@@ -11,9 +11,9 @@ const antionio = Antonio({
 export default function Home() {
     // Data showcase proyek agar kode di bawah lebih rapi dan modular
     const projects = [
-        { name: 'PickBlue WebApp', url: 'app-dev.pickblue.cloud', tag: 'APP-01' },
-        { name: 'PerQuest WebApp', url: 'app-dev.perquest.cloud', tag: 'APP-02' },
-        { name: 'FT3App', url: 'Local Environment', tag: 'APP-03' },
+        { name: 'PickBlue WebApp', url: 'https://app-dev.pickblue.cloud', tag: 'APP-01' },
+        { name: 'PerQuest WebApp', url: 'https://app-dev.perquest.cloud', tag: 'APP-02' },
+        { name: 'FT3App', url: 'https://ft-3-web-docs.vercel.app', tag: 'APP-03' },
     ];
 
     // Data tech stack untuk manifes di footer
@@ -112,15 +112,12 @@ export default function Home() {
                 {/* Grid List Aplikasi: 1 kolom di mobile, 2 di tablet, 3 di desktop */}
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 my-8 sm:my-12 z-10">
                     {projects.map((project, idx) => {
-                        const isExternal = project.url.includes('.cloud');
-                        const hrefValue = isExternal ? `https://${project.url}` : '#';
+                        const hrefValue = project.url;
 
                         return (
                             <Link
                                 key={idx}
                                 href={hrefValue}
-                                target={isExternal ? '_blank' : undefined}
-                                rel={isExternal ? 'noopener noreferrer' : undefined}
                                 className="border border-neutral-800 bg-neutral-950/80 backdrop-blur-xs p-5 sm:p-6 flex flex-col justify-between h-64 sm:h-72 relative group hover:border-neutral-500 transition-colors duration-300 cursor-pointer"
                             >
                                 <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-neutral-700 group-hover:border-neutral-400"></div>
