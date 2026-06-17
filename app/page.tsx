@@ -69,9 +69,9 @@ export default function Home() {
                 </div>
 
                 {/* Bottom Main Typography Group */}
-                <div className={cn('absolute bottom-0 left-0 p-4 sm:p-6 text-neutral-900 flex flex-col gap-1 sm:gap-2 w-full z-20')}>
+                <div className={cn('absolute bottom-0 left-0 p-4 sm:p-6 text-neutral-900 flex flex-col gap-4 sm:gap-4 w-full z-20')}>
                     {/* Skills Header: Mengganti w-266 statis dengan sistem max-w dinamis */}
-                    <div className="grid grid-cols-2 w-full max-w-full md:max-w-5xl border-b border-neutral-400 pb-1.5 sm:pb-2 font-mono text-[10px] sm:text-xs tracking-widest uppercase text-neutral-500">
+                    <div className="grid grid-cols-2 w-full max-w-full md:max-w-266.25 border-b border-neutral-400 pb-1.5 sm:pb-2 font-mono text-[10px] sm:text-xs tracking-widest uppercase text-neutral-500 sm:ml-2">
                         <div className="flex items-center gap-1 sm:gap-2">
                             <span className="truncate">3D Generalist</span>
                             <span className="text-neutral-900 font-bold">[01]</span>
