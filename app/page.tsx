@@ -17,14 +17,14 @@ export default function Home() {
     ];
 
     // Data tech stack untuk manifes di footer
-    const stacks = ['JS', 'TS', 'React', 'NestJS', 'Laravel'];
+    const stacks = ['TypeScript', 'ReactJS', 'NestJS', 'Laravel'];
 
     return (
         <div className="w-full min-h-screen bg-neutral-50 overflow-x-hidden selection:bg-neutral-900 selection:text-neutral-100">
             {/* HERO SECTION */}
             <section className="relative bg-linear-to-b from-neutral-50 to-neutral-200 w-full min-h-screen lg:h-screen flex items-center justify-center overflow-hidden">
                 {/* Background Crane: Disesuaikan posisinya di mobile agar tidak menutupi teks */}
-                <div className="absolute inset-0 w-full h-full scale-105 sm:scale-110 pointer-events-none z-0">
+                <div className="absolute z-90 inset-0 w-full h-full scale-105 sm:scale-110 pointer-events-none">
                     <Image
                         src="/img/crane.png"
                         alt="crane"
