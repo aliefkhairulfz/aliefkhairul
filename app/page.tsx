@@ -13,7 +13,6 @@ const antionio = Antonio({
 });
 
 export default function Home() {
-
     // Data tech stack
     const techStacks = [
         { name: 'TypeScript', icon: SiTypescript },
@@ -60,9 +59,9 @@ export default function Home() {
 
                 {/* Contact Me Button */}
                 <div className="absolute top-0 left-0 text-neutral-900 p-4 sm:p-6 md:py-7.5 z-20">
-                    <div className="flex items-center justify-center gap-2 py-2 px-4 bg-neutral-900 text-neutral-100 hover:bg-neutral-800 transition-colors cursor-pointer">
+                    <a href="mailto:aliefkhairulfz@gmail.com" className="flex items-center justify-center gap-2 py-2 px-4 bg-neutral-900 text-neutral-100 hover:bg-neutral-800 transition-colors cursor-pointer inline-flex">
                         <div className="tracking-tight uppercase text-sm sm:text-base font-mono">Contact Me</div>
-                    </div>
+                    </a>
                 </div>
 
                 {/* Biography Text */}
@@ -117,7 +116,7 @@ export default function Home() {
                                 <div className="relative w-full h-56 sm:h-72 border-b border-neutral-800 overflow-hidden bg-neutral-900">
                                     <ProjectImageSlider images={project.imageSrc} alt={project.title} index={idx} />
                                 </div>
-                                
+
                                 {/* Content Section */}
                                 <div className="p-6 sm:p-8 flex flex-col grow justify-between relative">
                                     <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-neutral-700 group-hover:border-neutral-400 m-6 sm:m-8"></div>
@@ -128,15 +127,9 @@ export default function Home() {
                                             <span className="shrink-0 text-right">{project.timeframe}</span>
                                         </div>
 
-                                        <h4 className={cn('text-2xl sm:text-4xl font-bold tracking-wide text-neutral-100', antionio.className)}>
-                                            {project.title}
-                                        </h4>
-                                        <p className="mt-3 text-neutral-300 text-sm sm:text-base font-semibold normal-case">
-                                            {project.subtitle}
-                                        </p>
-                                        <p className="mt-4 text-neutral-400 text-xs sm:text-sm normal-case leading-relaxed line-clamp-4">
-                                            {project.overview}
-                                        </p>
+                                        <h4 className={cn('text-2xl sm:text-4xl font-bold tracking-wide text-neutral-100', antionio.className)}>{project.title}</h4>
+                                        <p className="mt-3 text-neutral-300 text-sm sm:text-base font-semibold normal-case">{project.subtitle}</p>
+                                        <p className="mt-4 text-neutral-400 text-xs sm:text-sm normal-case leading-relaxed line-clamp-4">{project.overview}</p>
                                     </div>
                                     <div className="mt-8 flex flex-wrap gap-2 text-[10px] sm:text-xs normal-case">
                                         {project.techStack.map((tech, i) => (
